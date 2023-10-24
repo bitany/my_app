@@ -25,7 +25,10 @@ class HomePage extends StatelessWidget {
         leading: IconButton(
           icon: Icon(Icons.account_circle),
           onPressed: () {
-            Navigator.of(context).pushNamed('/settings'); // Use named route
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Settings()),
+            );
           },
         ),
         actions: [
@@ -34,7 +37,10 @@ class HomePage extends StatelessWidget {
               if (value == 'preference') {
                 // Handle preference
               } else if (value == 'guide') {
-                Navigator.of(context).pushNamed('/guide'); // Use named route
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => GuidePage()),
+                );
               } else if (value == 'about') {
                 // Handle about the developer
               }
@@ -119,7 +125,10 @@ class HomePage extends StatelessWidget {
               CircleButton(
                 color: Colors.red,
                 onTap: () {
-                  Navigator.pushNamed(context, '/send_sos'); // Use named route
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SendSOSPage()),
+                  );
                 },
               ),
               // Add other colored buttons here with their respective logic
@@ -145,7 +154,7 @@ class SquareButton extends StatelessWidget {
     return Center(
       child: Image.asset(
         imageAsset,
-        width: 120, // Adjust the width as needed
+        width: 100, // Adjust the width as needed
       ),
     );
   }
