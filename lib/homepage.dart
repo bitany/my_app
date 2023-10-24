@@ -132,10 +132,42 @@ class HomePage extends StatelessWidget {
                 },
               ),
               // Add other colored buttons here with their respective logic
-              CircleButton(color: Colors.orange),
-              CircleButton(color: Colors.yellow),
-              CircleButton(color: Colors.blue),
-              CircleButton(color: Colors.green),
+              CircleButton(
+                color: Colors.orange,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SendSOSPage()),
+                  );
+                },
+              ),
+              CircleButton(
+                color: Colors.yellow,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SendSOSPage()),
+                  );
+                },
+              ),
+              CircleButton(
+                color: Colors.blue,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SendSOSPage()),
+                  );
+                },
+              ),
+              CircleButton(
+                color: Colors.green,
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SendSOSPage()),
+                  );
+                },
+              ),
             ],
           ),
         );

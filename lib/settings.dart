@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/homepage.dart';
 
 class Settings extends StatelessWidget {
   const Settings({Key? key}) : super(key: key);
@@ -123,7 +124,10 @@ class Settings extends StatelessWidget {
                 ),
                 ElevatedButton(
                   onPressed: () {
-                    // Implement your save action here
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomePage()),
+                    );
                   },
                   child: const Text("Save"),
                 ),

@@ -1,12 +1,13 @@
 // ignore_for_file: unused_import
 
 import 'package:flutter_test/flutter_test.dart';
+import 'package:my_app/login_page.dart';
 import 'package:my_app/main.dart'; // Import your app's main file
 
 void main() {
   test('Login Logic Test', () {
     // Create a test widget
-    final widget = LoginPage();
+    final widget = LogIn();
 
     // Initialize controllers with test data
     widget.studentOrEmployeeController.text = '12345';

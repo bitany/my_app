@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/settings.dart';
 
 class GuidePage extends StatefulWidget {
   const GuidePage({Key? key}) : super(key: key);
@@ -17,10 +18,9 @@ class _GuidePageState extends State<GuidePage> {
           IconButton(
             icon: const Icon(Icons.settings_suggest_outlined),
             onPressed: () {
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(
-                  content: Text('Open ang settings plz hehe TwT'),
-                ),
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Settings()),
               );
             },
           ),
