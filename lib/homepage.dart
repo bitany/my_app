@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'guide.dart'; // Import your guide.dart file
 import 'settings.dart'; // Import your settings.dart file
 import 'send_sos.dart'; // Import your send_sos.dart file
+import 'about_page.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -10,6 +11,7 @@ void main() {
       '/settings': (context) => Settings(), // Use Settings
       '/guide': (context) => GuidePage(), // Use GuidePage
       '/send_sos': (context) => SendSOSPage(), // Add the route for SendSOSPage
+      '/about': (context) => AboutPage(),
     },
   ));
 }
@@ -42,7 +44,10 @@ class HomePage extends StatelessWidget {
                   MaterialPageRoute(builder: (context) => GuidePage()),
                 );
               } else if (value == 'about') {
-                // Handle about the developer
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => AboutPage()),
+                );
               }
             },
             itemBuilder: (BuildContext context) {
