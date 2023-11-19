@@ -58,3 +58,5 @@ flutter:
     - assets/video.png
     - assets/microphone.png
     - assets/chat.png
+    - assets/animal.gif
+    - assets/animal_icon.gif

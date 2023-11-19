@@ -50,7 +50,7 @@ class MyAppHomePage extends StatelessWidget {
                 Transform.scale(
                   scale: 1.5,
                   child: Image.asset(
-                    'assets/hi.gif',
+                    'assets/animal.gif',
                     width: 300,
                     height: 300,
                   ),
